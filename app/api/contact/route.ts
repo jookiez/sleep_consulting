@@ -1,6 +1,25 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
+// In-memory rate limiter: 5 submissions per IP per hour.
+// Resets on serverless cold starts — acceptable for a low-traffic site.
+const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const windowMs = 60 * 60 * 1000; // 1 hour
+  const limit = 5;
+  const entry = rateLimitMap.get(ip);
+
+  if (!entry || now > entry.resetAt) {
+    rateLimitMap.set(ip, { count: 1, resetAt: now + windowMs });
+    return false;
+  }
+  if (entry.count >= limit) return true;
+  entry.count++;
+  return false;
+}
+
 function escape(str: string): string {
   return str
     .replace(/&/g, '&amp;')
@@ -10,6 +29,14 @@ function escape(str: string): string {
 }
 
 export async function POST(request: Request) {
+  const ip = request.headers.get('x-forwarded-for') ?? 'unknown';
+  if (isRateLimited(ip)) {
+    return NextResponse.json(
+      { error: 'Too many submissions. Please try again later.' },
+      { status: 429 }
+    );
+  }
+
   const resend = new Resend(process.env.RESEND_API_KEY);
   const body = await request.json();
   const { name, email, phone, babyAge, message } = body;

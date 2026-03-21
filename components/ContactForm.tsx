@@ -20,7 +20,7 @@ const initialForm: FormData = {
 
 export default function ContactForm() {
   const [form, setForm] = useState<FormData>(initialForm);
-  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error' | 'rate-limited'>('idle');
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -40,6 +40,8 @@ export default function ContactForm() {
       if (res.ok) {
         setStatus('success');
         setForm(initialForm);
+      } else if (res.status === 429) {
+        setStatus('rate-limited');
       } else {
         setStatus('error');
       }
@@ -137,6 +139,11 @@ export default function ContactForm() {
       {status === 'success' && (
         <p className="text-green-600 text-sm font-medium">
           Message sent! I&apos;ll be in touch within 24–48 hours.
+        </p>
+      )}
+      {status === 'rate-limited' && (
+        <p className="text-red-500 text-sm font-medium">
+          Too many submissions — please wait an hour before trying again.
         </p>
       )}
       {status === 'error' && (
