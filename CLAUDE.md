@@ -75,6 +75,7 @@ Add `RESEND_API_KEY` as an environment variable in Vercel project settings (do n
 **Gotchas already solved — do not revert:**
 - `vercel.json` must exist with `{"framework":"nextjs"}` — Vercel does not auto-detect Next.js for this repo and will throw "No Output Directory named public" without it.
 - The Resend client in `app/api/contact/route.ts` is instantiated *inside* the POST handler, not at module level. Module-level instantiation runs at build time when env vars aren't set yet, causing a build failure.
+- The contact API route has in-memory rate limiting (5 submissions/IP/hour). This is intentional — if upgraded to persistent storage (e.g. Upstash Redis) in future, remove the in-memory `rateLimitMap` logic.
 
 ## Design Decisions Made (don't revert without asking)
 - Buttons are pill-shaped (`rounded-full`) — intentional, softer feel
