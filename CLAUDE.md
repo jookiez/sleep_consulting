@@ -69,8 +69,12 @@ Name, Email, Phone (optional), Baby's Age, Message. Submissions go to `wagnerm@a
   Stored as a comment in `app/page.tsx`. Was previously used as background on the "Why Families Choose Alexandra" section — removed at owner's request but kept for future use.
 
 ## Deployment
-Push to GitHub → connect repo in Vercel dashboard → it will auto-detect Next.js.
+Push to GitHub → connect repo in Vercel dashboard.
 Add `RESEND_API_KEY` as an environment variable in Vercel project settings (do not commit `.env.local`).
+
+**Gotchas already solved — do not revert:**
+- `vercel.json` must exist with `{"framework":"nextjs"}` — Vercel does not auto-detect Next.js for this repo and will throw "No Output Directory named public" without it.
+- The Resend client in `app/api/contact/route.ts` is instantiated *inside* the POST handler, not at module level. Module-level instantiation runs at build time when env vars aren't set yet, causing a build failure.
 
 ## Design Decisions Made (don't revert without asking)
 - Buttons are pill-shaped (`rounded-full`) — intentional, softer feel
