@@ -74,7 +74,7 @@ export default function FAQPage() {
         </div>
       </section>
 
-      <section className="bg-stone-50 py-12 px-4">
+      <section className="bg-purple-50 py-12 px-4">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="font-serif text-xl font-semibold text-stone-800 mb-3">
             Still have questions?

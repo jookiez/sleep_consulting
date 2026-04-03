@@ -61,7 +61,7 @@ export default function AboutPage() {
       </section>
 
       {/* Credentials */}
-      <section className="bg-stone-50 py-16 px-4">
+      <section className="bg-purple-50 py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-serif text-2xl font-semibold text-stone-800 mb-8 text-center">
             Credentials &amp; Training

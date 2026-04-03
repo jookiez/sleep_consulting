@@ -167,7 +167,7 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="bg-stone-50 py-16 px-4">
+      <section id="contact" className="bg-purple-50 py-16 px-4">
         <div className="max-w-2xl mx-auto">
           <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-stone-800 text-center mb-3">
             Get in Touch
