@@ -9,6 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        leaf: {
+          400: '#8fa290',
+          500: '#7a8e7b',
+          600: '#667566',
+        },
         moon: {
           50: '#f3f1f7',
           100: '#e6e2ef',
