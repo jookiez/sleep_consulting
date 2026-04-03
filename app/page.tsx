@@ -59,7 +59,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-rose-50 to-white py-20 px-4">
+      <section className="bg-gradient-to-b from-purple-50 to-white py-20 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="font-serif text-4xl sm:text-5xl font-semibold text-stone-800 leading-tight mb-6">
             Better Sleep for Your Baby,
@@ -74,7 +74,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
               href="#contact"
-              className="px-8 py-3 bg-rose-300 text-stone-800 font-medium rounded-full hover:bg-rose-400 transition-colors"
+              className="px-8 py-3 bg-purple-300 text-stone-800 font-medium rounded-full hover:bg-purple-400 transition-colors"
             >
               Book a Free Discovery Call
             </a>
@@ -122,7 +122,7 @@ export default function Home() {
                 key={s.title}
                 className="bg-white rounded-2xl border border-stone-100 shadow-sm p-6"
               >
-                <p className="text-xs font-medium text-rose-500 uppercase tracking-wider mb-2">
+                <p className="text-xs font-medium text-purple-500 uppercase tracking-wider mb-2">
                   {s.price}
                 </p>
                 <h3 className="font-semibold text-stone-800 text-lg mb-2">{s.title}</h3>
@@ -131,7 +131,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-8">
-            <Link href="/services" className="text-rose-500 font-medium text-sm hover:underline">
+            <Link href="/services" className="text-purple-500 font-medium text-sm hover:underline">
               View all services →
             </Link>
           </div>
@@ -139,7 +139,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials preview */}
-      <section className="bg-rose-50 py-16 px-4">
+      <section className="bg-purple-50 py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-stone-800 text-center mb-10">
             What Families Are Saying
@@ -158,7 +158,7 @@ export default function Home() {
           <div className="text-center mt-8">
             <Link
               href="/testimonials"
-              className="text-rose-500 font-medium text-sm hover:underline"
+              className="text-purple-500 font-medium text-sm hover:underline"
             >
               Read more testimonials →
             </Link>

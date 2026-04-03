@@ -51,14 +51,14 @@ export default function ContactForm() {
   };
 
   const inputClass =
-    'w-full rounded-xl border border-stone-300 px-3 py-2 text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-rose-300 focus:border-transparent';
+    'w-full rounded-xl border border-stone-300 px-3 py-2 text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-purple-300 focus:border-transparent';
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-stone-700 mb-1">
-            Full Name <span className="text-rose-400">*</span>
+            Full Name <span className="text-purple-400">*</span>
           </label>
           <input
             id="name"
@@ -73,7 +73,7 @@ export default function ContactForm() {
         </div>
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-stone-700 mb-1">
-            Email <span className="text-rose-400">*</span>
+            Email <span className="text-purple-400">*</span>
           </label>
           <input
             id="email"
@@ -105,7 +105,7 @@ export default function ContactForm() {
         </div>
         <div>
           <label htmlFor="babyAge" className="block text-sm font-medium text-stone-700 mb-1">
-            Baby&apos;s Age <span className="text-rose-400">*</span>
+            Baby&apos;s Age <span className="text-purple-400">*</span>
           </label>
           <input
             id="babyAge"
@@ -122,7 +122,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-stone-700 mb-1">
-          Tell me about your sleep challenges <span className="text-rose-400">*</span>
+          Tell me about your sleep challenges <span className="text-purple-400">*</span>
         </label>
         <textarea
           id="message"
@@ -155,7 +155,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === 'sending'}
-        className="w-full sm:w-auto px-8 py-3 bg-rose-300 text-stone-800 text-sm font-medium rounded-full hover:bg-rose-400 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+        className="w-full sm:w-auto px-8 py-3 bg-purple-300 text-stone-800 text-sm font-medium rounded-full hover:bg-purple-400 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {status === 'sending' ? 'Sending…' : 'Send Message'}
       </button>

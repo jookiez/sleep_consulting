@@ -55,7 +55,7 @@ const packages = [
 export default function ServicesPage() {
   return (
     <>
-      <section className="bg-gradient-to-b from-rose-50 to-white py-16 px-4">
+      <section className="bg-gradient-to-b from-purple-50 to-white py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="font-serif text-4xl font-semibold text-stone-800 mb-4">Services</h1>
           <p className="text-stone-600 text-lg">
@@ -71,25 +71,25 @@ export default function ServicesPage() {
               key={pkg.name}
               className={`rounded-2xl border p-6 sm:p-8 flex flex-col ${
                 pkg.featured
-                  ? 'border-rose-300 bg-rose-50 shadow-md'
+                  ? 'border-purple-300 bg-purple-50 shadow-md'
                   : 'border-stone-100 bg-white shadow-sm'
               }`}
             >
               {pkg.featured && (
-                <span className="text-xs font-medium text-rose-500 uppercase tracking-wider mb-2">
+                <span className="text-xs font-medium text-purple-500 uppercase tracking-wider mb-2">
                   Most Popular
                 </span>
               )}
               <h2 className="font-serif text-xl font-semibold text-stone-800 mb-1">
                 {pkg.name}
               </h2>
-              <p className="text-rose-500 font-medium mb-1">{pkg.price}</p>
+              <p className="text-purple-500 font-medium mb-1">{pkg.price}</p>
               <p className="text-xs text-stone-500 mb-4">{pkg.duration}</p>
               <p className="text-stone-600 text-sm leading-relaxed mb-4">{pkg.description}</p>
               <ul className="space-y-1 mb-6 flex-1">
                 {pkg.includes.map((item) => (
                   <li key={item} className="text-sm text-stone-700 flex gap-2">
-                    <span className="text-rose-400 mt-0.5 shrink-0">✓</span>
+                    <span className="text-purple-400 mt-0.5 shrink-0">✓</span>
                     {item}
                   </li>
                 ))}
@@ -98,7 +98,7 @@ export default function ServicesPage() {
                 href="/#contact"
                 className={`px-6 py-2.5 text-sm font-medium rounded-full text-center transition-colors ${
                   pkg.featured
-                    ? 'bg-rose-300 text-stone-800 hover:bg-rose-400'
+                    ? 'bg-purple-300 text-stone-800 hover:bg-purple-400'
                     : 'border border-stone-300 text-stone-700 hover:bg-stone-50'
                 }`}
               >
@@ -120,7 +120,7 @@ export default function ServicesPage() {
           </p>
           <a
             href="/#contact"
-            className="px-8 py-3 bg-rose-300 text-stone-800 font-medium rounded-full hover:bg-rose-400 transition-colors"
+            className="px-8 py-3 bg-purple-300 text-stone-800 font-medium rounded-full hover:bg-purple-400 transition-colors"
           >
             Get in Touch
           </a>

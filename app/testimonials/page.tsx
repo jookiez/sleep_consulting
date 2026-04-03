@@ -16,7 +16,7 @@ const testimonials = [
 export default function TestimonialsPage() {
   return (
     <>
-      <section className="bg-gradient-to-b from-rose-50 to-white py-16 px-4">
+      <section className="bg-gradient-to-b from-purple-50 to-white py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="font-serif text-4xl font-semibold text-stone-800 mb-4">
             Testimonials
@@ -30,7 +30,7 @@ export default function TestimonialsPage() {
       <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto space-y-8">
           {testimonials.map((t) => (
-            <div key={t.author} className="bg-rose-50 rounded-2xl p-8">
+            <div key={t.author} className="bg-purple-50 rounded-2xl p-8">
               <p className="text-stone-700 text-sm leading-relaxed mb-6 whitespace-pre-line">
                 &ldquo;{t.quote}&rdquo;
               </p>
@@ -50,7 +50,7 @@ export default function TestimonialsPage() {
           </h2>
           <a
             href="/#contact"
-            className="inline-block px-8 py-3 bg-rose-300 text-stone-800 font-medium rounded-full hover:bg-rose-400 transition-colors"
+            className="inline-block px-8 py-3 bg-purple-300 text-stone-800 font-medium rounded-full hover:bg-purple-400 transition-colors"
           >
             Get in Touch
           </a>

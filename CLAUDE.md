@@ -43,12 +43,12 @@ Name, Email, Phone (optional), Baby's Age, Message. Submissions go to `wagnerm@a
 
 ## Design System
 - **Font**: Lora (serif) for headings, Inter (sans) for body — loaded via `next/font/google`
-- **Colors**:
-  - Primary buttons: `bg-rose-300 text-stone-800` hover `bg-rose-400` — soft blush, not alarming
-  - Active nav links / accents: `text-rose-500`
+- **Colors** (matched to the logo's lavender moon + sage leaf):
+  - Primary buttons: `bg-purple-300 text-stone-800` hover `bg-purple-400` — soft lavender
+  - Active nav links / accents: `text-purple-500`
   - Section backgrounds alternate: white and `bg-stone-50`
-  - Testimonials section: `bg-rose-50`
-  - Hero gradient: `from-rose-50 to-white`
+  - Testimonials section: `bg-purple-50`
+  - Hero gradient: `from-purple-50 to-white`
   - Footer: `bg-stone-800`
   - All text uses `stone-*` (warmer than `slate-*`)
 - **Border radius**: `rounded-full` for buttons (pill shape), `rounded-2xl` for cards — deliberately soft and approachable
@@ -82,7 +82,6 @@ Add `RESEND_API_KEY` as an environment variable in Vercel project settings (do n
 
 ## Design Decisions Made (don't revert without asking)
 - Buttons are pill-shaped (`rounded-full`) — intentional, softer feel
-- Blue color palette was replaced with rose/stone — the owner found blue too corporate
-- `rose-500` buttons were softened to `rose-300` — owner found them too red/alarming
+- Blue → rose → purple color palette evolution: blue was too corporate, rose was too red/alarming, purple matches the logo
 - `slate-*` was replaced with `stone-*` throughout — stone reads warmer
 - Social icons are inline SVGs (no icon library dependency)
