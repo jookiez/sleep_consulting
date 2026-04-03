@@ -6,62 +6,48 @@ export const metadata: Metadata = {
 
 const packages = [
   {
-    name: 'Free Discovery Call',
-    price: 'Free',
-    duration: '15 minutes',
+    name: 'Foundations',
+    price: '$150',
+    duration: '',
     description:
-      "Not sure if sleep consulting is right for you? Let's chat. This no-obligation call gives you the chance to ask questions, share your situation, and find out how I can help.",
+      'For parents who want to implement themselves. Get a personalized sleep plan with expert guidance to start your journey to better sleep.',
     includes: [
-      'Overview of your current sleep situation',
-      'Introduction to my approach and methods',
-      'Recommended next steps',
-    ],
-    cta: 'Book a Free Call',
-    featured: false,
-  },
-  {
-    name: 'Initial Consultation',
-    price: 'Starting at $149',
-    duration: '60–90 minutes',
-    description:
-      "A thorough deep-dive into your child's sleep history, current habits, and goals. Includes a customized written sleep plan you can start implementing right away.",
-    includes: [
-      'Detailed intake form review',
-      '60–90 minute consultation call',
-      'Customized written sleep plan',
-      '7 days of email support',
+      'Personalized sleep plan',
+      'Intake call',
+      'Schedule/routine guidance',
+      '1 week troubleshooting support',
     ],
     cta: 'Get Started',
     featured: false,
   },
   {
-    name: 'Full Sleep Support Package',
-    price: 'Starting at $349',
+    name: 'Full Support',
+    price: '$250',
     duration: '2 weeks',
     description:
-      'Our most comprehensive option. I walk with you through every step of the process — from plan creation through implementation — with daily check-ins and real-time adjustments.',
+      'For parents who want more support. I walk with you through every step of the process — from plan creation through implementation — with daily check-ins and real-time adjustments.',
     includes: [
-      'Everything in Initial Consultation',
-      '14 days of daily check-in calls or messages',
-      'Plan adjustments as needed',
-      'Access to resource library',
-      '30-day follow-up call',
+      'Personalized sleep plan & intake call',
+      'Daily check-ins',
+      '2 weeks troubleshooting support',
+      'Adjustments as baby progresses',
     ],
     cta: 'Get Started',
     featured: true,
   },
   {
-    name: 'Follow-Up Session',
-    price: '$79',
-    duration: '30 minutes',
+    name: 'Overnight Support',
+    price: '$25/hour',
+    duration: '10pm – 6am',
     description:
-      'Already a client and running into new challenges? A focused follow-up session to troubleshoot regressions, transitions, or new sleep issues.',
+      'For parents who want in-person support. I come to your home and handle the night so you can finally get a full night of sleep.',
     includes: [
-      '30-minute call',
-      'Updated plan adjustments',
-      '7 days of follow-up email support',
+      'In-home overnight care',
+      'Supporting baby through night wakings',
+      'Implementing sleep strategies',
+      'Full night\'s sleep for parents!',
     ],
-    cta: 'Book a Follow-Up',
+    cta: 'Book Overnight Support',
     featured: false,
   },
 ];
@@ -79,7 +65,7 @@ export default function ServicesPage() {
       </section>
 
       <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           {packages.map((pkg) => (
             <div
               key={pkg.name}
@@ -129,14 +115,14 @@ export default function ServicesPage() {
             Not sure which package is right for you?
           </h2>
           <p className="text-stone-600 text-sm mb-6">
-            Book a free discovery call and we&apos;ll figure it out together — no
+            Reach out and we&apos;ll figure it out together — no
             pressure, no commitment.
           </p>
           <a
             href="/#contact"
             className="px-8 py-3 bg-rose-300 text-stone-800 font-medium rounded-full hover:bg-rose-400 transition-colors"
           >
-            Book a Free Discovery Call
+            Get in Touch
           </a>
         </div>
       </section>

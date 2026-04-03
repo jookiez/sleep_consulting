@@ -7,39 +7,9 @@ export const metadata: Metadata = {
 const testimonials = [
   {
     quote:
-      'Alexandra changed our lives. Our 8-month-old went from waking 5 times a night to sleeping 11 hours straight in just two weeks. I only wish we had found her sooner.',
-    author: 'Sarah M.',
-    detail: 'Mom of an 8-month-old',
-  },
-  {
-    quote:
-      "I was skeptical at first, but the personalized approach made all the difference. We finally have our evenings back, and our son falls asleep on his own without any fuss.",
-    author: 'Michael & Jen T.',
-    detail: 'Parents of a 10-month-old',
-  },
-  {
-    quote:
-      "Kind, patient, and incredibly knowledgeable. Alexandra guided us through every step without judgment. She really listened to what we were comfortable with.",
-    author: 'Priya K.',
-    detail: 'Mom of twins, age 6 months',
-  },
-  {
-    quote:
-      "After 14 months of barely sleeping, I was at my breaking point. Alexandra's plan was clear, gentle, and actually worked. We saw results in the first three days.",
-    author: 'Rachel H.',
-    detail: 'Mom of a 14-month-old',
-  },
-  {
-    quote:
-      'Worth every penny. The support we received throughout the two-week program was incredible. Alexandra was always available and always had an answer.',
-    author: 'David & Mia L.',
-    detail: 'Parents of a 7-month-old',
-  },
-  {
-    quote:
-      "We tried everything before reaching out — nothing worked. Alexandra figured out what was going wrong within the first call and had a plan ready the next day.",
-    author: 'Anna B.',
-    detail: 'Mom of a 5-month-old',
+      "We first reached out to Caillie when our 6-month-old twin girls were waking every hour (sometimes more!). We had tried a standard, one-size-fits-all sleep plan, but it just didn't work the way it had for our son. I spent weeks reading Reddit posts and trying other strategies with zero success. Sleep-deprived and knowing our girls needed support with their sleep, we turned to Caillie.\n\nShe curated a plan that was tailored to our girls' specific developmental milestones, daily routines, and our comfort level. The plan was thoughtful, straightforward, and included recommendations I hadn't thought of. Starting the first night of us implementing Caillie's recommendations, the girls were sleeping long stretches through the night!\n\nWhat truly sets Caillie apart is her troubleshooting support. Whether I had a quick question or the girls got sick early in our sleep plan, she provided clear, reassuring guidance that kept us on track. As a twin mom, I honestly can't imagine where we'd be without her. I'm happy to report our girls are sleeping through the night because of Caillie's support, and our whole family is finally waking up well-rested as a result. I cannot recommend Caillie enough to any mom looking for a supportive expert to lean on through their sleep journey.",
+    author: 'Chelsea',
+    detail: 'Mom of twin girls, age 6 months',
   },
 ];
 
@@ -58,10 +28,10 @@ export default function TestimonialsPage() {
       </section>
 
       <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="max-w-3xl mx-auto space-y-8">
           {testimonials.map((t) => (
-            <div key={t.author} className="bg-rose-50 rounded-2xl p-6 flex flex-col">
-              <p className="text-stone-700 text-sm leading-relaxed flex-1 mb-4">
+            <div key={t.author} className="bg-rose-50 rounded-2xl p-8">
+              <p className="text-stone-700 text-sm leading-relaxed mb-6 whitespace-pre-line">
                 &ldquo;{t.quote}&rdquo;
               </p>
               <div>

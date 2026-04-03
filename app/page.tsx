@@ -27,43 +27,31 @@ const features = [
 
 const services = [
   {
-    title: 'Discovery Call',
-    price: 'Free',
+    title: 'Foundations',
+    price: '$150',
     description:
-      "A 15-minute introductory call to discuss your child's sleep challenges and how I can help.",
+      'A personalized sleep plan with an intake call, schedule guidance, and 1 week of troubleshooting support. For parents who want to implement themselves.',
   },
   {
-    title: 'Initial Consultation',
-    price: 'Starting at $149',
+    title: 'Full Support',
+    price: '$250',
     description:
-      "A thorough review of your child's sleep history and a customized sleep plan to get you started.",
+      'Everything you need — personalized sleep plan, daily check-ins, 2 weeks of troubleshooting support, and adjustments as baby progresses.',
   },
   {
-    title: 'Full Sleep Support Package',
-    price: 'Starting at $349',
+    title: 'Overnight Support',
+    price: '$25/hour',
     description:
-      'Complete support from plan creation through implementation, including daily check-ins for two weeks.',
+      'In-home overnight care (10pm–6am). I support your baby through night wakings so you can get a full night of sleep.',
   },
 ];
 
 const testimonials = [
   {
     quote:
-      'Alexandra changed our lives. Our 8-month-old went from waking 5 times a night to sleeping 11 hours straight in just two weeks.',
-    author: 'Sarah M.',
-    detail: 'Mom of an 8-month-old',
-  },
-  {
-    quote:
-      "I was skeptical at first, but the personalized approach made all the difference. We finally have our evenings back!",
-    author: 'Michael & Jen T.',
-    detail: 'Parents of a 10-month-old',
-  },
-  {
-    quote:
-      'Kind, patient, and incredibly knowledgeable. Alexandra guided us through every step without judgment.',
-    author: 'Priya K.',
-    detail: 'Mom of twins, age 6 months',
+      "When our twin girls were 6 months old, they were waking every hour. After failing with standard sleep plans and endless DIY research, we reached out to Caillie to create a custom strategy that respected our girls' needs and our comfort level. The results were nearly instant. After the first night they were sleeping long stretches, and in no time they were happily sleeping the entire night on their own.",
+    author: 'Chelsea',
+    detail: 'Mom of twin girls, age 6 months',
   },
 ];
 
@@ -104,7 +92,7 @@ export default function Home() {
       <section className="bg-stone-50 py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-stone-800 text-center mb-12">
-            Why Families Choose Alexandra
+            Why Families Choose Caillie
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {features.map((f) => (
@@ -156,7 +144,7 @@ export default function Home() {
           <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-stone-800 text-center mb-10">
             What Families Are Saying
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="max-w-2xl mx-auto">
             {testimonials.map((t) => (
               <div key={t.author} className="bg-white rounded-2xl p-6 shadow-sm">
                 <p className="text-stone-700 text-sm leading-relaxed mb-4">

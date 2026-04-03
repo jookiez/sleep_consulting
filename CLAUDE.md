@@ -1,7 +1,7 @@
 # Alexandra Sleep Consulting — Project Context
 
 ## What This Is
-A Next.js website for a pediatric sleep consulting business called **Alexandra Sleep Consulting**. Hosted on **Vercel**. Built with Next.js 15 (App Router), TypeScript, and Tailwind CSS.
+A Next.js website for a pediatric sleep consulting business called **Alexandra Sleep Consulting**, run by **Caillie Alexandra Sheppard**. Hosted on **Vercel**. Built with Next.js 15 (App Router), TypeScript, and Tailwind CSS.
 
 ## Current State
 The site is fully scaffolded and ready to run. Node.js needs to be installed (`nvm install --lts`), then `npm install` to get dependencies.
@@ -11,8 +11,8 @@ Run locally with: `npm run dev`
 ## Pages Built
 - `/` — Home (hero, why choose us, services preview, testimonials preview, contact form)
 - `/about` — About page with photo placeholder, credentials, philosophy
-- `/services` — 4 service packages with pricing
-- `/testimonials` — 6 client testimonials
+- `/services` — 3 service packages with real pricing (Foundations $150, Full Support $250, Overnight $25/hr)
+- `/testimonials` — 1 real testimonial (Chelsea, twin mom) — more to come
 - `/faq` — 8 FAQs using native `<details>`/`<summary>` accordion
 - `/api/contact` — Serverless API route that sends form submissions via Resend
 
@@ -55,15 +55,18 @@ Name, Email, Phone (optional), Baby's Age, Message. Submissions go to `wagnerm@a
 - **Vibe**: Warm, calm, nurturing. NOT corporate. NOT ad-like.
 
 ## Still TODO (owner to provide)
-- [ ] Logo — placeholder text used in Navbar and Footer
-- [ ] Alexandra's photo — placeholder box on About page (`bg-stone-100` div)
+- [x] Logo — now using real logo in Navbar and Footer (`public/images/logo.png`)
+- [ ] Caillie's photo — placeholder box still on About page (`bg-stone-100` div)
 - [ ] Real social media links — currently `https://facebook.com/placeholder`, `https://instagram.com/placeholder`, `https://tiktok.com/@placeholder` in `components/Footer.tsx`
 - [ ] Verify a sending domain in Resend and update `from` in `app/api/contact/route.ts`
-- [ ] Real pricing (current prices are placeholder: $149 / $349 / $79)
-- [ ] Real testimonials (current ones are placeholder copy)
-- [ ] Real credentials/bio copy on About page
+- [x] Real pricing — Foundations $150, Full Support $250, Overnight $25/hr
+- [x] Real testimonial from Chelsea (twin mom) — need more testimonials to fill out the page
+- [x] Real credentials/bio copy on About page — includes certificate image (`public/images/certificate.jpeg`)
 
 ## Stored Assets
+- **Logo**: `public/images/logo.png` — purple crescent moon with leaf, "Alexandra Sleep Consulting" text
+- **Banner**: `public/images/banner.png` — full branded banner with logo + sleeping baby illustration + tagline "Compassionate Support for Restful Nights" (not yet used on the site)
+- **Certificate**: `public/images/certificate.jpeg` — Institute of Pediatric Sleep & Parenting certification for Caillie Sheppard (displayed on About page)
 - **Sleeping baby stock photo** (baby feet in white blanket, Unsplash, free to use):
   `https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=1600&q=80`
   Stored as a comment in `app/page.tsx`. Was previously used as background on the "Why Families Choose Alexandra" section — removed at owner's request but kept for future use.
