@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 const links = [
@@ -21,13 +20,11 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-white border-b border-stone-200 shadow-sm">
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <Link href="/" className="flex items-center gap-2">
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src="/images/logo-white.png"
             alt="Alexandra Sleep Consulting"
-            width={200}
-            height={64}
-            className="h-14 w-auto bg-white"
-            priority
+            className="h-14 w-auto"
           />
         </Link>
 
