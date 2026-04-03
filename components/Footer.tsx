@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 const socialLinks = [
   {
@@ -45,13 +44,9 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <Image
-              src="/images/logo.png"
-              alt="Alexandra Sleep Consulting"
-              width={160}
-              height={56}
-              className="h-12 w-auto mb-3 brightness-0 invert"
-            />
+            <p className="font-serif text-white text-lg font-semibold mb-3">
+              Alexandra Sleep Consulting
+            </p>
             <p className="text-sm text-stone-400 leading-relaxed">
               Helping families find rest, one night at a time. Certified
               pediatric sleep consulting for babies and toddlers.
