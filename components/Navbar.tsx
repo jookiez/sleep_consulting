@@ -26,7 +26,7 @@ export default function Navbar() {
             alt="Alexandra Sleep Consulting"
             width={200}
             height={64}
-            className="h-14 w-auto"
+            className="h-14 w-auto bg-white"
             priority
           />
         </Link>
