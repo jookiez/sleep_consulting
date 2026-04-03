@@ -36,7 +36,7 @@ export default function Navbar() {
               href={href}
               className={`text-sm font-medium transition-colors ${
                 pathname === href
-                  ? 'text-leaf-600'
+                  ? 'text-moon-600'
                   : 'text-stone-600 hover:text-stone-900'
               }`}
             >
@@ -78,7 +78,7 @@ export default function Navbar() {
               href={href}
               onClick={() => setOpen(false)}
               className={`text-sm font-medium ${
-                pathname === href ? 'text-leaf-600' : 'text-stone-600'
+                pathname === href ? 'text-moon-600' : 'text-stone-600'
               }`}
             >
               {label}
