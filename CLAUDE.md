@@ -55,7 +55,7 @@ Name, Email, Phone (optional), Baby's Age, Message. Submissions go to `wagnerm@a
 - **Vibe**: Warm, calm, nurturing. NOT corporate. NOT ad-like.
 
 ## Still TODO (owner to provide)
-- [x] Logo — now using real logo in Navbar and Footer (`public/images/logo.png`)
+- [x] Logo — Navbar uses `public/images/logo-white.jpg` (plain `<img>`), Footer uses styled text
 - [ ] Caillie's photo — placeholder box still on About page (`bg-stone-100` div)
 - [ ] Real social media links — currently `https://facebook.com/placeholder`, `https://instagram.com/placeholder`, `https://tiktok.com/@placeholder` in `components/Footer.tsx`
 - [ ] Verify a sending domain in Resend and update `from` in `app/api/contact/route.ts`
@@ -64,7 +64,8 @@ Name, Email, Phone (optional), Baby's Age, Message. Submissions go to `wagnerm@a
 - [x] Real credentials/bio copy on About page — includes certificate image (`public/images/certificate.jpeg`)
 
 ## Stored Assets
-- **Logo**: `public/images/logo.png` — purple crescent moon with leaf, "Alexandra Sleep Consulting" text
+- **Logo (navbar)**: `public/images/logo-white.jpg` — trimmed logo with white background, served as plain `<img>` (not Next.js `<Image>`) to avoid optimization issues
+- **Logo (original)**: `public/images/logo.png` — transparent PNG, has trimming applied but NOT used directly on the site (Gemini-generated "transparent" version had fake checkerboard baked in; original from image0.png is the clean source)
 - **Banner**: `public/images/banner.png` — full branded banner with logo + sleeping baby illustration + tagline "Compassionate Support for Restful Nights" (not yet used on the site)
 - **Certificate**: `public/images/certificate.jpeg` — Institute of Pediatric Sleep & Parenting certification for Caillie Sheppard (displayed on About page)
 - **Sleeping baby stock photo** (baby feet in white blanket, Unsplash, free to use):
@@ -85,3 +86,5 @@ Add `RESEND_API_KEY` as an environment variable in Vercel project settings (do n
 - Blue → rose → purple color palette evolution: blue was too corporate, rose was too red/alarming, purple matches the logo
 - `slate-*` was replaced with `stone-*` throughout — stone reads warmer
 - Social icons are inline SVGs (no icon library dependency)
+- Navbar logo uses plain `<img>` tag, not Next.js `<Image>` — the optimization pipeline was causing issues with transparency
+- Footer uses styled text for the brand name, not the logo image — invert filters didn't work well with the logo
