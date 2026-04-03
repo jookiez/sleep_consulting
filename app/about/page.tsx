@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <section className="bg-gradient-to-b from-purple-50 to-white py-16 px-4">
+      <section className="bg-gradient-to-b from-moon-50 to-white py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="font-serif text-4xl font-semibold text-stone-800 mb-4">
             About Caillie
@@ -61,7 +61,7 @@ export default function AboutPage() {
       </section>
 
       {/* Credentials */}
-      <section className="bg-purple-50 py-16 px-4">
+      <section className="bg-moon-50 py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-serif text-2xl font-semibold text-stone-800 mb-8 text-center">
             Credentials &amp; Training
@@ -114,7 +114,7 @@ export default function AboutPage() {
           </p>
           <a
             href="/#contact"
-            className="px-8 py-3 bg-purple-400 text-stone-800 font-medium rounded-full hover:bg-purple-500 transition-colors"
+            className="px-8 py-3 bg-moon-400 text-stone-800 font-medium rounded-full hover:bg-moon-500 transition-colors"
           >
             Work With Me
           </a>

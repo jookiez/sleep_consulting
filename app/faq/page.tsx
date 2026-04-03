@@ -42,7 +42,7 @@ const faqs = [
 export default function FAQPage() {
   return (
     <>
-      <section className="bg-gradient-to-b from-purple-50 to-white py-16 px-4">
+      <section className="bg-gradient-to-b from-moon-50 to-white py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="font-serif text-4xl font-semibold text-stone-800 mb-4">
             Frequently Asked Questions
@@ -74,7 +74,7 @@ export default function FAQPage() {
         </div>
       </section>
 
-      <section className="bg-purple-50 py-12 px-4">
+      <section className="bg-moon-50 py-12 px-4">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="font-serif text-xl font-semibold text-stone-800 mb-3">
             Still have questions?
@@ -84,7 +84,7 @@ export default function FAQPage() {
           </p>
           <a
             href="/#contact"
-            className="px-8 py-3 bg-purple-400 text-stone-800 font-medium rounded-full hover:bg-purple-500 transition-colors"
+            className="px-8 py-3 bg-moon-400 text-stone-800 font-medium rounded-full hover:bg-moon-500 transition-colors"
           >
             Get in Touch
           </a>
