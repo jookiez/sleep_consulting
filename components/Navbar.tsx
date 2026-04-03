@@ -36,7 +36,7 @@ export default function Navbar() {
               href={href}
               className={`text-sm font-medium transition-colors ${
                 pathname === href
-                  ? 'text-purple-500'
+                  ? 'text-purple-600'
                   : 'text-stone-600 hover:text-stone-900'
               }`}
             >
@@ -45,7 +45,7 @@ export default function Navbar() {
           ))}
           <a
             href="/#contact"
-            className="ml-2 px-4 py-2 bg-purple-300 text-stone-800 text-sm font-medium rounded-full hover:bg-purple-400 transition-colors"
+            className="ml-2 px-4 py-2 bg-purple-400 text-stone-800 text-sm font-medium rounded-full hover:bg-purple-500 transition-colors"
           >
             Book a Call
           </a>
@@ -78,7 +78,7 @@ export default function Navbar() {
               href={href}
               onClick={() => setOpen(false)}
               className={`text-sm font-medium ${
-                pathname === href ? 'text-purple-500' : 'text-stone-600'
+                pathname === href ? 'text-purple-600' : 'text-stone-600'
               }`}
             >
               {label}
@@ -87,7 +87,7 @@ export default function Navbar() {
           <a
             href="/#contact"
             onClick={() => setOpen(false)}
-            className="px-4 py-2 bg-purple-300 text-stone-800 text-sm font-medium rounded-full text-center"
+            className="px-4 py-2 bg-purple-400 text-stone-800 text-sm font-medium rounded-full text-center"
           >
             Book a Call
           </a>

@@ -71,7 +71,7 @@ export default function ServicesPage() {
               key={pkg.name}
               className={`rounded-2xl border p-6 sm:p-8 flex flex-col ${
                 pkg.featured
-                  ? 'border-purple-300 bg-purple-50 shadow-md'
+                  ? 'border-purple-400 bg-purple-50 shadow-md'
                   : 'border-stone-100 bg-white shadow-sm'
               }`}
             >
@@ -98,7 +98,7 @@ export default function ServicesPage() {
                 href="/#contact"
                 className={`px-6 py-2.5 text-sm font-medium rounded-full text-center transition-colors ${
                   pkg.featured
-                    ? 'bg-purple-300 text-stone-800 hover:bg-purple-400'
+                    ? 'bg-purple-400 text-stone-800 hover:bg-purple-500'
                     : 'border border-stone-300 text-stone-700 hover:bg-stone-50'
                 }`}
               >
@@ -120,7 +120,7 @@ export default function ServicesPage() {
           </p>
           <a
             href="/#contact"
-            className="px-8 py-3 bg-purple-300 text-stone-800 font-medium rounded-full hover:bg-purple-400 transition-colors"
+            className="px-8 py-3 bg-purple-400 text-stone-800 font-medium rounded-full hover:bg-purple-500 transition-colors"
           >
             Get in Touch
           </a>

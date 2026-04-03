@@ -50,7 +50,7 @@ export default function TestimonialsPage() {
           </h2>
           <a
             href="/#contact"
-            className="inline-block px-8 py-3 bg-purple-300 text-stone-800 font-medium rounded-full hover:bg-purple-400 transition-colors"
+            className="inline-block px-8 py-3 bg-purple-400 text-stone-800 font-medium rounded-full hover:bg-purple-500 transition-colors"
           >
             Get in Touch
           </a>

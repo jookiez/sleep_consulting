@@ -51,7 +51,7 @@ export default function ContactForm() {
   };
 
   const inputClass =
-    'w-full rounded-xl border border-stone-300 px-3 py-2 text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-purple-300 focus:border-transparent';
+    'w-full rounded-xl border border-stone-300 px-3 py-2 text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent';
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
@@ -155,7 +155,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === 'sending'}
-        className="w-full sm:w-auto px-8 py-3 bg-purple-300 text-stone-800 text-sm font-medium rounded-full hover:bg-purple-400 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+        className="w-full sm:w-auto px-8 py-3 bg-purple-400 text-stone-800 text-sm font-medium rounded-full hover:bg-purple-500 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {status === 'sending' ? 'Sending…' : 'Send Message'}
       </button>

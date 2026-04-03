@@ -84,7 +84,7 @@ export default function FAQPage() {
           </p>
           <a
             href="/#contact"
-            className="px-8 py-3 bg-purple-300 text-stone-800 font-medium rounded-full hover:bg-purple-400 transition-colors"
+            className="px-8 py-3 bg-purple-400 text-stone-800 font-medium rounded-full hover:bg-purple-500 transition-colors"
           >
             Get in Touch
           </a>
