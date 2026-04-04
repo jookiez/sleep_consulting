@@ -9,7 +9,7 @@ const lora = Lora({ subsets: ['latin'], variable: '--font-lora' });
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? 'https://alexandrasleepconsulting.com'
+    process.env.NEXT_PUBLIC_SITE_URL ?? 'https://sleep-consulting.vercel.app'
   ),
   title: 'Alexandra Sleep Consulting',
   description:
@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     description:
       'Compassionate, certified pediatric sleep consulting to help your family rest better.',
     type: 'website',
+    url: 'https://sleep-consulting.vercel.app',
     siteName: 'Alexandra Sleep Consulting',
     images: [
       {
