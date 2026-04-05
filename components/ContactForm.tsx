@@ -8,6 +8,7 @@ type FormData = {
   phone: string;
   babyAge: string;
   message: string;
+  website: string; // honeypot
 };
 
 const initialForm: FormData = {
@@ -16,6 +17,7 @@ const initialForm: FormData = {
   phone: '',
   babyAge: '',
   message: '',
+  website: '',
 };
 
 export default function ContactForm() {
@@ -67,6 +69,17 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
+      {/* Honeypot — hidden from humans, bots auto-fill it */}
+      <input
+        type="text"
+        name="website"
+        autoComplete="off"
+        tabIndex={-1}
+        aria-hidden="true"
+        className="absolute opacity-0 pointer-events-none h-0 w-0"
+        value={form.website}
+        onChange={handleChange}
+      />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-stone-700 mb-1">
