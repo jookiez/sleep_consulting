@@ -22,7 +22,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/logo-white.jpg"
+            src="/images/alexandra-sleep-consulting.png"
             alt="Alexandra Sleep Consulting"
             className="h-14 w-auto"
           />
